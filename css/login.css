@@ -1,0 +1,67 @@
+body{margin:0px;padding:0px;font-family: 微软雅黑;color:#ddd;background:#fcfcfc;}
+a{text-decoration: none;}
+.header{height:80px;border-bottom:1px solid #ddd;box-shadow:0px 2px 4px #ddd;background:white;}
+.header_{width:1200px;margin:0px auto;}
+.header_right{float:right;margin-top:20px;font-size: 12px;}
+.header_right a{display: inline-block;padding-left: 8px;color:#7195F9;}
+.header_right a:hover{color:#FFB070;}
+.header_right .menu .ball{background-image: url("../images/login_1.png");background-repeat: no-repeat;display: inline-block;width:20px;background-position: -340px 0px;padding:0px 2px;line-height: 15px;}
+.header_right .menu .ball_{background-image: url("../images/login_1.png");background-repeat: no-repeat;display: inline-block;width:13px;background-position:-346px -29px;line-height: 14px;margin-left: 2px;}
+.header_right .menu{display: inline-block;border:solid white;border-width: 1px 1px 0px 1px;width:100px;text-align:center;line-height: 25px;position: relative;background:white;}
+.header_right .menu a{padding:0px;width:100px;color:#5C5959;}
+.header_right .menu a:hover{color:red;}
+.header_right .menu:hover{border-color: #ddd;}
+.header_right .menu:hover .menu_items{display: block;}
+.header_right .menu:hover .menu_items a{border-bottom:1px dotted #ddd;}
+.header_right .menu .menu_items{position:absolute;display: none;height:129px;border:solid #ddd;border-width: 0px 1px 1px 1px;left: -1px;background: white;}
+.login_main{width:1200px;margin:0px auto;padding:50px;}
+.login_main .ad{display: inline-block;padding-left:100px;}
+.login_form{float: right;width:300px;font-size:14px;background: white;margin-right: 110px;padding:20px 30px;position: relative;}
+.login_form .label{color:#666161;font-weight: 600;line-height: 35px;height:35px;display: inline-block;width:100%;}
+.login_form .label .login_ZC{float:right;font-size:12px;font-weight: 100;}
+.login_ZC:hover{color:#FFB070;}
+.login_user{position: relative;width:100%;height:60px;}
+.login_user input{border:solid #ddd;border-width:1px 1px 1px 0px;width:250px;float:right;height:45px;}
+.login_user .user{background-image: url("../images/login_1.png");background-repeat:no-repeat;background-position: -34px 15px;position: absolute;width:47px;border:solid #ddd;border-width: 1px 0px 1px 1px;height:47px;}
+.login_pwd{position: relative;width:100%;height:60px;}
+.login_pwd input{border:solid #ddd;border-width:1px 1px 1px 0px;width:250px;float:right;height:45px;}
+.login_pwd .pwd{background-image: url("../images/login_1.png");background-repeat:no-repeat;background-position: -135px 15px;position: absolute;width:47px;border:solid #ddd;border-width: 1px 0px 1px 1px;height:47px;}
+.checked{width:100%;margin-bottom:10px;}
+.checked a{color:#BCB7B7;font-size:12px;}
+.checked a span{background-image: url("../images/login_1.png");background-repeat:no-repeat;background-position: -346px -268px;width:15px;height:15px;display: inline-block;}
+.checked .right{float:right;}
+.temp{background-position:-346px -327px!important}
+.checked a:hover span{background-position:-346px -298px}
+.submit{width:100%;text-align:center;border-radius: 5px;line-height: 45px;height:45px;background:#ff5353;color:white;margin-bottom:10px;}
+.more{color:#7A7777;font-size:12px;}
+.more .qq{background:#ddd;display: inline-block;width:33px;height:33px;border-radius: 50%;background-image: url("../images/qq.png");background-repeat: no-repeat;background-position: 5px 2px;}
+.more .xl{background:#ddd;display: inline-block;width:33px;height:33px;border-radius: 50%;background-image: url("../images/xl.png");background-repeat: no-repeat;background-position: 0px 0px;}
+.more .zf{background:#ddd;display: inline-block;width:33px;height:33px;border-radius: 50%;background-image: url("../images/zf.png");background-repeat: no-repeat;background-position: 2px 5px;}
+.more .wx{background:#ddd;display: inline-block;width:33px;height:33px;border-radius: 50%;background-image: url("../images/wx.png");background-repeat: no-repeat;background-position: 2px 5px;}
+.more .qq:hover{background: #ff875a;background-image: url("../images/qq.png");background-position: 5px 2px;}
+.more .xl:hover{background: #ff875a;background-image: url("../images/xl.png");background-position: 0px 0px;}
+.more .zf:hover{background: #ff875a;background-image: url("../images/zf.png");background-position: 2px 5px;}
+.more .wx:hover{background: #ff875a;background-image: url("../images/wx.png");background-position: 2px 5px;}
+.more .more_{color:#7A7777;line-height: 33px;display: inline-block;float:right;}
+.more_ span{background-image: url("../images/login_1.png");line-height:13px;display: inline-block;width:15px;margin-left:5px;background-repeat: no-repeat;background-position: -200px 0px;}
+.collaborate{margin-top: 10px;width:100%;display: none;}
+.collaborate a{color:#7a7777;display: inline-block;width:70px;line-height: 20px;height:20px;}
+.collaborate a:hover{color:#ff875a;}
+.cut{height:40px;}
+.cut_{background: white;height:62px;border-top-left-radius: 100px;background-image: url("../images/qh.png");width:60px;bottom:0px;right:0px;background-repeat: no-repeat;position: absolute;background-position: -88px 1px;} 
+.cut_:hover{background-position:-88px -87px;} 
+/*二维码*/
+.cut_1{background: white;height:62px;background-image: url("../images/qh.png");width:60px;bottom:0px;right:0px;background-repeat: no-repeat;position: absolute;background-position: 0px 0px;}
+.cut_1:hover{background-position: 0px -88px;} 
+/*===============*/
+.none_tier{width:100%;text-align:center;color:#464444;display: none;}
+.none_tier strong{line-height: 50px;height:50px;}
+.none_tier span{display: inline-block;width:1px;border:solid #837F7F;border-width: 0px 1px 0px 0px;line-height: 12px;}
+.none_tier .no_1{color:#ff5353;}
+.none_tier_ a{color:#837f7f;font-size: 12px;}
+.none_tier_ a:hover{color:#ff875a;}
+.none_tier .scan{border:1px solid #ddd;font-size:12px;width:150px;margin-top: 10px;display: inline-block;line-height: 30px;background:#F6E4B5;color:#BEB3B3;}
+.copyright{text-align: center;margin-top:50px;font-size: 12px;color:#3F3A3A;clear:both;}
+.copyright a{color:#3F3A3A;font-size: 12px;}
+.copyright a:hover{color:red;}
+.copyright .items{display: inline-block;width:1px;border-right:1px solid #6A6464;line-height: 10px;}

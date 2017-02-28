@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-1.7.2.min.js"></script>
+</head>
+<style type="text/css">
+
+			#logo{
+				width:1250px;
+				height:460px;
+				margin:0px auto;
+				position: relative;
+			}
+			#logo .left{position: absolute;left:0px;top:42%;}
+			#logo .right{position: absolute;right:5px;top:42%;}
+			#logo .left img{padding:10px 5px;}
+			#logo .right img{padding:10px 5px;}
+			#logo .left:hover img{background: #595252;}
+			#logo .right:hover img{background: #595252;}
+			#logo img{
+				position: absolute;
+			}
+			#logo_btn{
+				position: absolute;
+				bottom: 10px;
+				right: 0;
+			}
+			#logo_btn li{
+				width: 20px;
+				height: 20px;
+				margin:0px 5px;
+				text-indent: -9999px;
+				line-height: 50px;
+				text-align: center;
+				background: #FFFFFF;
+				border-radius: 25px;
+				float: left;
+				color: #000000;
+			}
+			#logo_img li img{
+				position: absolute;
+			}
+			#logo .active{
+				background: yellow;
+				color: red;
+			}
+</style>
+<body>
+	<div id="logo">
+		<ul id="logo_img">
+			<li><a href="#"><img src="images/lb_1.png" /></a></li>
+			<li><a href="#"><img src="images/lb_2.png" /></a></li>
+			<li><a href="#"><img src="images/lb_3.png" /></a></li>
+			<li><a href="#"><img src="images/lb_4.png" /></a></li>
+		</ul>
+		<ul id="logo_btn">
+			<li id="btn_1" class="active">1</li>
+			<li id="btn_2">2</li>
+			<li id="btn_3">3</li>
+			<li id="btn_4">4</li>
+		</ul>	
+		<a href="javascript:void(0)" class="left"><img src="images/arrowl.png" alt=""></a>
+		<a href="javascript:void(0)" class="right"><img src="images/arrowr.png" alt=""></a>
+	</div>
+<script type="text/javascript">
+var i=1;
+var index=0;
+$(function(){
+$("#logo_btn li").mouseover(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+	index=$("#logo_btn li").index($(this));
+	i=index;
+	$("#logo_img img").attr("src","images/lb_"+(index+1)+".png");
+	});
+});
+$("#logo .left img").click(function(){
+	i=index;
+	$("#logo_img img").attr("src","images/lb_"+(index+1)+".png");
+})
+var sx=function(){
+	$("#logo_btn li").eq(i).trigger('mouseover');
+	i++;
+	var lengVal=$("#logo_btn>li").length-1;
+	if(i>lengVal){
+		i=0;
+	}
+}
+$("#logo_img li").hover(function(){
+		clearInterval(tag)
+	},function(){
+		tag=setInterval("sx()",3000);
+	})
+var tag=setInterval("sx()",3000);
+
+</script>
+</body>
+</html>
